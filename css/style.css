@@ -31,25 +31,47 @@ hr {
     font-style: normal;
   }
 
-  
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
 h1 {
-    font-family: "DotGothic16", sans-serif;
-    font-size: 1.3rem;
+    font-family: "Instrument Serif", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Instrument Serif", serif;
+    font-size: 2rem;
+    font-weight: 400;
     line-height: 100%;
     margin-bottom: 0;
 }
 
 a {
-    font-family: "DotGothic16", sans-serif;
-    font-size: 1.1rem;
-    line-height: 150%;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.8rem;
+    line-height: 120%;
     color: rgb(5, 93, 48);
     text-decoration: none;
 }
 
 a:hover {
-    background-color: rgb(5, 93, 48);
+    /*background-color: rgb(5, 93, 48);*/
+    /*text-decoration: underline;*/
+    font-style: italic;
+
 }
 
 p {
@@ -60,15 +82,19 @@ p {
 
 @media only screen and (max-width:500px) {
     a {
-        font-family: "DotGothic16", sans-serif;
-        font-size: 1rem;
-        line-height: 150%;
+        font-size: 1.5rem;
+        line-height: 100%;
     }
 
     h1 {
-        font-family: "DotGothic16", sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.8rem;
         line-height: 120%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 100%;
+        margin-bottom: 0;
     }
     
     p {
@@ -114,10 +140,6 @@ header {
     .clock {
         display: none;
     }
-
-
-
-
   }
 
 
@@ -127,10 +149,10 @@ header {
 
   footer {
     position: sticky;
-    margin: 0;
-    background-color: rgb(63, 29, 29);
+    margin: 0 3% 0;
+    display: flex;
+    column-gap: 50%;
   }
-
 
 
 /* PROJECTS PAGE */
@@ -151,6 +173,14 @@ header {
     list-style-type: none;
 }
 
+.intro a {
+    font-size: 1.5rem;
+}
+
+.colophon {
+    margin: 1vh 3% auto;
+}
+
 @media only screen and (max-width:750px) {
     .intro {
         display: grid;
@@ -159,6 +189,7 @@ header {
 
     }
 }
+
 
 
 /* projects section */
@@ -176,6 +207,7 @@ header {
     grid-template-columns: 1fr 1fr;
     align-items: baseline; /* aligns text to baseline */
     column-gap: 4%;
+    margin-top: -2%;
 }
 
 img {
@@ -198,10 +230,43 @@ img {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        margin-bottom: 5%;
+    }
+
+}
+
+/* INFO PAGE */
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 3%;
+    row-gap: 5%;
+    column-gap: 1%;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+@media only screen and (max-width:750px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-/* project page */
+@media only screen and (max-width:500px) {
+    .info {
+        display: block;
+    }
+}
+
+
+
+/* PROJECT PAGE TEMPLATE */
 
 .project-title h1 {
     margin-top: 6vh;
@@ -213,8 +278,19 @@ img {
     margin: 3% 20%;
 }
 
+.project-grid a {
+    font-size: 1.2rem;
+}
+
 .project-grid div {
     margin-bottom: 5%;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1%;
+
 }
 
 @media only screen and (max-width:800px) {
@@ -231,20 +307,28 @@ img {
     background-color: rgb(249, 249, 249);
     position: sticky;
     bottom: 0;
-    height: 4vh;
+    height: 5vh;
 }
 
 .bottom-controls {
     display: flex;
     align-items: center;
-    height: 4vh;
+    height: 5vh;
     margin: auto 3% auto;
     position: sticky;
+}
+
+.bottom-controls a {
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width:500px) {
     #top-button {
         display: none;
+    }
+
+    .bottom-controls a {
+        font-size: 1.2rem;
     }
   }
 
