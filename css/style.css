@@ -71,12 +71,23 @@ a:hover {
     /*background-color: rgb(5, 93, 48);*/
     /*text-decoration: underline;*/
     font-style: italic;
-
 }
 
 p {
     font-family: "Helvetica Neue";
     font-size: 1rem;
+    line-height: 130%;
+}
+
+li {
+    font-family: "Helvetica Neue";
+    font-size: 1rem;
+    line-height: 130%;
+}
+
+figcaption {
+    font-family: "Helvetica Neue";
+    font-size: 0.8rem;
     line-height: 130%;
 }
 
@@ -92,14 +103,23 @@ p {
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         line-height: 100%;
         margin-bottom: 0;
     }
     
     p {
-        font-family: "Helvetica Neue";
         font-size: 0.8rem;
+        line-height: 130%;
+    }
+
+    li {
+        font-size: 0.8rem;
+        line-height: 130%;
+    }
+
+    figcaption {
+        font-size: 0.6rem;
         line-height: 130%;
     }
 }
@@ -282,15 +302,22 @@ img {
     font-size: 1.2rem;
 }
 
+
+
 .project-grid div {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1%;
+    column-gap: 3%;
+}
 
+.three-column {
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
 }
 
 @media only screen and (max-width:800px) {
@@ -301,6 +328,27 @@ img {
     .project-grid {
         margin: 3% 3%;
     }
+
+    .two-column {
+        display: block;
+    }
+
+    .two-column img {
+        margin-bottom: 3%;
+    }
+
+    .three-column {
+        display: block;
+    }
+
+    .three-column img {
+        margin-bottom: 3%;
+    }
+
+}
+
+figure {
+    margin: 0;
 }
 
 .control-container {
@@ -340,3 +388,7 @@ img {
   }
 
 
+.tableauPlaceholder {
+    margin: 3%;
+    margin-left: 10%;
+}
