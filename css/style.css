@@ -13,7 +13,6 @@ html {
 
 hr {
     border: 1px dashed;
-    position: sticky;
 }
 
 .back-to-top {
@@ -97,6 +96,11 @@ figcaption {
         line-height: 100%;
     }
 
+    .clock {
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+
     h1 {
         font-size: 1.8rem;
         line-height: 120%;
@@ -138,7 +142,7 @@ header {
     padding: 0;
     list-style: none;
   
-    display: flex;
+    display: flex; 
   }
   
 .main-nav a {
@@ -152,11 +156,16 @@ header {
   }
 
 .clock {
+    font-family: "Instrument Serif", serif;
+    font-size: 1.8rem;
+    line-height: 120%;
+    color: rgb(5, 93, 48);
+
+    padding: 0.5em 0;
     text-align: center;
-    margin: 0.5em 0;
 }
 
-  @media only screen and (max-width:400px) {
+  @media only screen and (max-width:500px) {
     .clock {
         display: none;
     }
@@ -180,7 +189,7 @@ header {
 /* intro section */
 
 .intro {
-    margin: 1vh 3% auto;
+    margin: 0 3% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1%;
@@ -205,7 +214,16 @@ header {
     .intro {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 5vh 3% auto;
+        margin: auto 3% auto;
+
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10% 3%;
 
     }
 }
@@ -217,8 +235,8 @@ header {
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 5% 3%;
-    row-gap: 5%;
+    margin: 2% 3%;
+    row-gap: 2%;
     column-gap: 1%;
 }
 
@@ -227,7 +245,6 @@ header {
     grid-template-columns: 1fr 1fr;
     align-items: baseline; /* aligns text to baseline */
     column-gap: 4%;
-    margin-top: -2%;
 }
 
 img {
