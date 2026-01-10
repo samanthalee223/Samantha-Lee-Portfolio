@@ -179,9 +179,6 @@ header {
   footer {
     position: sticky;
     margin: 0 3% 0;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 50%;
   }
 
 
@@ -288,6 +285,10 @@ img {
     padding: 0;
 }
 
+.info a {
+    font-size: 1.2rem;
+}
+
 
 @media only screen and (max-width:750px) {
     .info {
@@ -300,6 +301,10 @@ img {
     .info {
         display: block;
     }
+}
+
+.colophon a {
+    font-size: 1.2rem;
 }
 
 
