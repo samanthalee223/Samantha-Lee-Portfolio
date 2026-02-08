@@ -236,13 +236,15 @@ header {
     margin: 2% 3%;
     row-gap: 2%;
     column-gap: 1%;
+    padding-bottom: 2%;
 }
 
 .project-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: baseline; /* aligns text to baseline */
+    align-items:first baseline; /* aligns text to baseline */
     column-gap: 4%;
+    margin-top: -2%;
 }
 
 img {
