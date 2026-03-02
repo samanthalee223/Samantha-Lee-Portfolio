@@ -54,19 +54,20 @@ h2 {
     font-family: "Instrument Serif", serif;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 100%;
     padding-bottom: 0;
 }
 
 h3 {
     font-family: "Instrument Serif", serif;
     font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: -10px;
+
 }
 
 a {
     font-family: "Instrument Serif", serif;
     font-size: 1.8rem;
-    line-height: 120%;
     color: rgb(5, 93, 48);
     text-decoration: none;
 }
@@ -98,7 +99,6 @@ figcaption {
 @media only screen and (max-width:500px) {
     a {
         font-size: 1.5rem;
-        line-height: 100%;
     }
 
     .clock {
@@ -330,12 +330,6 @@ img {
 
 .project-grid a {
     font-size: 1.2rem;
-}
-
-
-
-.project-grid div {
-    margin-bottom: 3%;
 }
 
 .two-column {
