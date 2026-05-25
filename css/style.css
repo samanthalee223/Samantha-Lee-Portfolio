@@ -43,31 +43,28 @@ hr {
 }
 
 h1 {
-    font-family: "Instrument Serif", serif;
-    font-size: 2rem;
+  font-family: "Instrument Serif", serif;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 100%;
-    margin-bottom: 0;
 }
 
 h2 {
-    font-family: "Instrument Serif", serif;
-    font-size: 2rem;
+  font-family: "Instrument Serif", serif;
+    font-size: 1.6rem;
     font-weight: 400;
-    padding-bottom: 0;
 }
 
 h3 {
-    font-family: "Instrument Serif", serif;
-    font-size: 1.4rem;
+  font-family: "Instrument Serif", serif;
+    font-size: 1.6rem;
     font-weight: 400;
-    margin-bottom: -10px;
-
+    line-height: 100%;
 }
 
 a {
-    font-family: "Instrument Serif", serif;
-    font-size: 1.8rem;
+  font-family: "Instrument Serif", serif;
+    font-size: 1.6rem;
     color: rgb(5, 93, 48);
     text-decoration: none;
 }
@@ -79,19 +76,19 @@ a:hover {
 }
 
 p {
-    font-family: "Helvetica Neue";
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 130%;
 }
 
 li {
-    font-family: "Helvetica Neue";
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 130%;
 }
 
 figcaption {
-    font-family: "Helvetica Neue";
+    font-family: 'Times New Roman', Times, serif;
     font-size: 0.8rem;
     line-height: 130%;
 }
@@ -161,12 +158,11 @@ header {
   }
 
 .clock {
-    font-family: "Instrument Serif", serif;
-    font-size: 1.8rem;
-    line-height: 120%;
+  font-family: "Instrument Serif", serif;
+    font-size: 1.6rem;
     color: rgb(5, 93, 48);
 
-    padding: 0.5em 0;
+    padding: 0.3em 0;
     text-align: center;
 }
 
@@ -189,7 +185,7 @@ header {
 
 /* PROJECTS PAGE */
 
-/* intro section */
+    /* intro section */
 
 .intro {
     margin: 0 3% auto;
@@ -233,7 +229,7 @@ header {
 
 
 
-/* projects section */
+    /* projects section */
 
 .projects {
     display: grid;
@@ -256,6 +252,8 @@ img {
     height: auto;
     width: 100%;
 }
+
+
 
 @media only screen and (max-width:750px) {
     .projects {
@@ -331,17 +329,22 @@ img {
 .project-grid a {
     font-size: 1.2rem;
 }
-
+.single-column {
+    margin-bottom: 3%;
+}
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3%;
+    margin-bottom: 3%;
 }
 
 .three-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3%;
+    margin-bottom: 3%;
+
 }
 
 @media only screen and (max-width:800px) {
@@ -379,13 +382,13 @@ figure {
     background-color: rgb(249, 249, 249);
     position: sticky;
     bottom: 0;
-    height: 5vh;
+    height: 4vh;
 }
 
 .bottom-controls {
     display: flex;
     align-items: center;
-    height: 5vh;
+    height: 4vh;
     margin: auto 3% auto;
     position: sticky;
 }
