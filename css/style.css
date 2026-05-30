@@ -71,7 +71,7 @@ h5 {
     line-height: 140%;
     color:rgb(5, 93, 48);
     margin: 0;
-    padding: 0;
+    padding: 1% 0;
 }
 
 a {
@@ -85,6 +85,10 @@ a:hover {
     /*background-color: rgb(5, 93, 48);*/
     /*text-decoration: underline;*/
     font-style: italic;
+}
+
+em {
+    font-weight: 800;
 }
 
 p {
@@ -127,7 +131,7 @@ figcaption {
     }
 
     h5 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     p {
@@ -187,8 +191,6 @@ header {
         display: none;
     }
   }
-
-
 
 
   /* footer */
@@ -295,8 +297,8 @@ img {
 
 .info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 3%;
+    grid-template-columns: repeat(2,1fr);
+    margin: 1% 3%;
     row-gap: 5%;
     column-gap: 1%;
 }
@@ -304,23 +306,58 @@ img {
 .info ul {
     list-style: none;
     padding: 0;
+    margin-top: 0;
 }
 
 .info a {
     font-size: 1.2rem;
 }
 
+.info h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+.info-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.info-div {
+    grid-column: span 2;
+}
+
+.about-image {
+    column-gap: 1%;
+    padding: 0 5%;
+}
+
 
 @media only screen and (max-width:750px) {
     .info {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: block;
+    }
+
+    .about-image {
+        padding: 0;
     }
 }
 
 @media only screen and (max-width:500px) {
     .info {
+        margin: 10% 3%;
+
+    }
+    .info-wrapper {
         display: block;
+    }
+
+    .info a {
+    font-size: 1rem;
     }
 }
 
