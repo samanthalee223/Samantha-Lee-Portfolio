@@ -21,3 +21,16 @@ updateClock();
 
 // Update the clock every second (1000 milliseconds)
 setInterval(updateClock, 1000);
+
+
+
+function copyButtonText() {
+  const btn = document.getElementById("copyButton");
+  const text = btn.innerText;
+  
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Copied: " + text);
+  }).catch(err => {
+    console.error("Failed to copy: ", err);
+  });
+}
